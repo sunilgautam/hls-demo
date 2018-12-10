@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Video</h1>
+    <hr>
+    <div>
+      <%= video.title %>
+    </div>
+    <div>
+      <video id="videoPlayer" controls>
+        <source src="<%= hls_url %>" type="video/mp4">
+      </video>
+    </div>
+  </body>
+</html>

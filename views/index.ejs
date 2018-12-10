@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Videos</h1>
+    <div>
+      <% videos.forEach((video) => { %>
+        <div>
+          <a href="/videos/<%= video.id %>"><%= video.title %></a>
+        </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
